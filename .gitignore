@@ -1,0 +1,67 @@
+# ==============================
+# Nereikalingi / laikini failai
+# ==============================
+*.tmp
+*.temp
+*.log
+*.cache
+*.bak
+*.swp
+*.swo
+
+# ==============================
+# Node.js
+# ==============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==============================
+# IDE nustatymai
+# ==============================
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# ==============================
+# Sistemos failai
+# ==============================
+.DS_Store
+.DS_Store?
+Thumbs.db
+Desktop.ini
+
+# ==============================
+# Aplinkos / slapti duomenys
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Build / automatiškai sugeneruoti failai
+# ==============================
+dist/
+build/
+out/
+coverage/
+.cache/
+.next/
+.nuxt/
+
+# ==============================
+# OS / įvairūs sugeneruoti failai
+# ==============================
+*.pid
+*.seed
+*.pid.lock
+
+# ==============================
+# Debug / testų rezultatai
+# ==============================
+.nyc_output/
+*.lcov
