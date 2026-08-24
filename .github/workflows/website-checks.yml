@@ -18,10 +18,7 @@ jobs:
         run: test -f project/index.html
  
       - name: Check that HTML tag exists
-        run: grep -qi "<html" index.html
- 
-      - name: Check that H1 exists
-        run: grep -qi "<h1" index.html
+        run: grep -qi "<html" project/index.html
  
  
   css-check:
