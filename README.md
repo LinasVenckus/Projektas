@@ -1,4 +1,4 @@
-# Komanda 3 Website
+# Threesome Website
 
 Website project based on a Figma design.
 
