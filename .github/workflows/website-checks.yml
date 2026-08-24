@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
  
       - name: Check that index.html exists
-        run: test -f index.html
+        run: test -f project/index.html
  
       - name: Check that HTML tag exists
         run: grep -qi "<html" index.html
@@ -33,4 +33,4 @@ jobs:
         uses: actions/checkout@v4
  
       - name: Check that style.css exists and is not empty
-        run: test -s CSS/style.css
+        run: test -s project/css/style.css
