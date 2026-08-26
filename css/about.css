@@ -29,7 +29,7 @@ body {
 .about-hero {
     padding: 110px 0 120px;
     background-color: var(--primary-teal);
-    background-image: url("assets/icons/bg-pattern-about-1-mobile-nav-1.svg");
+    background-image: url("../assets/icons/bg-pattern-about-1-mobile-nav-1.svg");
     background-repeat: no-repeat;
     background-position: right -98px top 145px;
 }
