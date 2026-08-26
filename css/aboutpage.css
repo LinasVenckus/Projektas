@@ -1,0 +1,81 @@
+/* reset.css */
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+html, body {
+ height: 100%;
+}
+
+
+/* primary colors */
+:root {
+    --mgreen: #014E56;
+    --lcolar: #F67E7E;
+    --white: #FFFFFF;
+}
+
+/* secondary colors */
+:root {
+    --rblue: #79C8C7;
+    --pblue: #2C6269;
+    --djgreen: #004047;
+    --ssgreen: #012F34;
+    --dgreen: #002529;
+}
+
+h1, .biggerfont, .smallerfont, h2, h3, h4, h5, h6 {
+    font-family: 'Livvic', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    color: #fff
+}
+
+.biggerfont {
+    font-size: 100px;
+    line-height: 100px;
+}
+
+.smallerfont {
+    font-size: 64px;
+    line-height: 64px;
+}
+
+
+h2 {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+body {
+    font-family: 'Livvic', sans-serif;
+    background-color: var(--mgreen);
+}
+
+.body1 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.body2 {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.clients {
+    background-color: #004047;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid var(--lcolar);
+}
