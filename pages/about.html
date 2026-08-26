@@ -1,106 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../css/aboutpage.css">
-    <script src="../js/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/about.css">
 </head>
-
 <body>
-    <section class=" about>
-    <nav>
-        NAV BARAS
-    </nav>
-    <!-- 1x1 grid / flex -->
-    <header>
-        <h1>About</h1>
-        <p>We help companies build dynamic teams made up of top global talent. Using our network of passionate
-            professional we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best
-            products and experiences. We'll bring those teams to you.</p>
-    </header>
-    </div>
+    <main class="about-page">
+        
+        <section class="about-hero">
+            <nav>
+                <!-- NAVBAR -->
+            </nav>
+            <div class="container about-hero__content">
+                <h1 id="about-title">About</h1>
+                <p>
+                    We help companies build dynamic teams made up of top global talent.
+                    Using our network of passionate professionals we drive innovation and
+                    deliver incredible outcomes. Talented, diverse teams shape the best
+                    products and experiences. We'll bring those teams to you.
+                </p>
+            </div>
+        </section>
 
-    <section class="directors">
-        <h1>Meet the directors</h1>
-        <!-- Naudojam flex grida 3x2 -->
-        <div class="directors-grid">
-            <div>
-                <img src="/assets/images/avatar-nikita.jpg" alt="Director 1">
-                <!-- Naudojam smallerbody -->
-                <h2 class="body1">Nikita Marks</h2>
-                <p class="body2">Founder & CEO</p>
+        <!-- Direktoriu sekcija -->
+        <section class="directors">
+            <div class="container">
+                <h2 id="directors-title">Meet the directors</h2>
+
+                <ul class="directors-grid">
+                    <li class="director-card">
+                        <article>
+                            <img src="assets/images/avatar-nikita.jpg" alt="Nikita Marks photo">
+                            <h3>Nikita Marks</h3>
+                            <p class="role">Founder &amp; CEO</p>
+                            <button type="button" class="card-toggle">+</button>
+                        </article>
+                    </li>
+
+                    <li class="director-card">
+                        <article>
+                            <img src="assets/images/avatar-christian.jpg" alt="Cristian Duncan photo">
+                            <h3>Cristian Duncan</h3>
+                            <p class="role">Co-founder &amp; COO</p>
+                            <button type="button" class="card-toggle">+</button>
+                        </article>
+                    </li>
+
+                    <li class="director-card">
+                        <article>
+                            <img src="assets/images/avatar-cruz.jpg" alt="Cruz Hamer photo">
+                            <h3>Cruz Hamer</h3>
+                            <p class="role">Co-founder &amp; CTO</p>
+                            <button type="button" class="card-toggle">+</button>
+                        </article>
+                    </li>
+
+                    <li class="director-card">
+                        <article>
+                            <img src="assets/images/avatar-drake.jpg" alt="Drake Heaton photo">
+                            <h3>Drake Heaton</h3>
+                            <p class="role">Business Development Lead</p>
+                            <button type="button" class="card-toggle">+</button>
+                        </article>
+                    </li>
+
+                    <li class="director-card">
+                        <article>
+                            <img src="assets/images/avatar-griffin.jpg" alt="Griffin Wise photo">
+                            <h3>Griffin Wise</h3>
+                            <p class="role">Lead Marketing</p>
+                            <button type="button" class="card-toggle">+</button>
+                        </article>
+                    </li>
+
+                    <li class="director-card director-card--quote">
+                        <article>
+                            <h3>Aden Allan</h3>
+                            <blockquote>
+                                “Empowered teams create truly amazing products.
+                                Set the north star and let them follow it.”
+                            </blockquote>
+                            <ul class="social-links" aria-label="Aden Allan social links">
+                                <li><a href="#" aria-label="Twitter"><img src="assets/icons/icon-twitter.svg" alt=""></a></li>
+                                <li><a href="#" aria-label="LinkedIn"><img src="assets/icons/icon-linkedin.svg" alt=""></a></li>
+                            </ul>
+                        </article>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <img src="/assets/images/avatar-christian.jpg" alt="Director 2">
-                <!-- Naudojam smallerbody -->
-                <h2 class="body1">Cristian Duncan</h2>
-                <p class="body2">Co-founder & COO</p>
+        </section>
+
+        <!-- Klientu logotipai-->
+        <section class="clients">
+            <div class="container">
+                <h2 id="clients-title">Some of our clients</h2>
+                <ul class="clients-grid">
+                    <li><img src="assets/icons/logo-the-verge.png" alt="The Verge"></li>
+                    <li><img src="assets/icons/logo-jakarta-post.png" alt="The Jakarta Post"></li>
+                    <li><img src="assets/icons/logo-the-guardian.png" alt="The Guardian"></li>
+                    <li><img src="assets/icons/logo-tech-radar.png" alt="Techradar"></li>
+                    <li><img src="assets/icons/logo-gadgets-now.png" alt="Gadgets Now"></li>
+                </ul>
             </div>
-            <div>
-                <img src="/assets/images/avatar-cruz.jpg" alt="Director 3">
-                <!-- Naudojam smallerbody -->
-                <h2 class="body1">Cruz Hamer</h2>
-                <p class="body2">Co-founder & CTO</p>
-            </div>
-            <div>
-                <img src="/assets/images/avatar-drake.jpg" alt="Director 4">
-                <!-- Naudojam smallerbody -->
-                <h2 class="body1">Drake Heaton</h2>
-                <p class="body2">Business Development Lead</p>
-            </div>
-            <div>
-                <img src="/assets/images/avatar-griffin.jpg" alt="Director 5">
-                <!-- Naudojam smallerbody -->
-                <h2 class="body1">Griffin Wise</h2>
-                <p class="body2">Lead Marketing</p>
-            </div>
-            <div>
-                <!-- Naudojam smallerbody -->
-                <h2 class="body1">Aden Allan</h2>
-                <p class="body2">“Empowered teams create truly amazing products. Set the north star and let them follow
-                    it.”</p>
-                <div>
-                    <img src="/assets/icons/icon-twitter.svg" alt="Twitter icon">
-                    <img src="/assets/icons/icon-linkedin.svg" alt="LinkedIn icon">
-                </div>
-            </div>
-        </div>
+        </section>
+    </main>
+
+    <footer>    
 
 
-    </section>
 
-    <section class="clients">
-        <h2>Some of our clients</h2>
-        <div class="clients-grid">
-            <div>
-                <img src="/assets/icons/logo-the-verge.png" alt="logo verge">
-            </div>
-            <div>
-                <img src="/assets/icons/logo-jakarta-post.png" alt="logo jakarta post">
-            </div>
-            <div>
-                <img src="/assets/icons/logo-the-guardian.png" alt="logo the guardian">
-            </div>
-            <div>
-                <img src="/assets/icons/logo-tech-radar.png" alt="logo tech radar">
-            </div>
-            <div>
-                <img src="/assets/icons/logo-gadgets-now.png" alt="logo gadgets now">
-            </div>
-
-    </section>
-
-    <footer>
-        <!-- FOOTERIS -->
     </footer>
-    </body>
-
+</body>
 </html>

@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-teal: #014e56;
+    --dark-teal: #004047;
+    --deep-teal: #012f34;
+    --card-teal: #012a2f;
+    --accent-coral: #f67e7e;
+    --accent-cyan: #79c8c7;
+    --text-light: #ffffff;
+}
+
+body {
+    font-family: "Livvic", sans-serif;
+    background: var(--primary-teal);
+    color: var(--text-light);
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.about-hero {
+    padding: 110px 0 120px;
+    background-color: var(--primary-teal);
+    background-image: url("assets/icons/bg-pattern-about-1-mobile-nav-1.svg");
+    background-repeat: no-repeat;
+    background-position: right -98px top 145px;
+}
+
+.about-hero__content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 44px;
+    align-items: start;
+}
+
+.about-hero h1 {
+    font-size: 64px;
+    line-height: 1;
+}
+
+.about-hero p {
+    max-width: 620px;
+    padding-top: 2rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.about-hero p::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 4px;
+    background: var(--accent-coral);
+}
+
+/* Korteliu sekcija 3x2 tinklelis */
+.directors {
+    padding: 92px 0 130px;
+    background-color: var(--dark-teal);
+    background-image: url("assets/icons/bg-pattern-about-2-contact-1.svg"), url("assets/icons/bg-pattern-home-4-about-3.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -100px top 0, right -95px bottom -100px;
+}
+
+.directors h2,
+.clients h2 {
+    text-align: center;
+    font-size: 48px;
+    line-height: 3rem;
+    margin-bottom: 3.25rem;
+}
+
+.directors-grid,
+.clients-grid,
+.social-links {
+    list-style: none;
+}
+
+.directors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.director-card article {
+    min-height: 252px;
+    background: var(--card-teal);
+    text-align: center;
+    padding: 2rem 1.5rem 3.2rem;
+    position: relative;
+}
+
+.director-card img {
+    width: 96px;
+    height: 96px;
+    border-radius: 48px;
+    border: 2px solid var(--accent-cyan);
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.director-card h3 {
+    color: var(--accent-cyan);
+    font-size: 1.1rem;
+    margin-bottom: 0.35rem;
+}
+
+.director-card .role {
+    font-size: 0.92rem;
+    font-style: italic;
+}
+
+.card-toggle {
+    position: absolute;
+    left: 50%;
+    bottom: -28px;
+    transform: translateX(-50%);
+    width: 56px;
+    height: 56px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--accent-coral);
+    color: var(--deep-teal);
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.director-card--quote article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.director-card--quote blockquote {
+    max-width: 320px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 0.95rem;
+}
+
+.social-links a {
+    display: inline-flex;
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border: 0;
+}
+
+/* Klientu dalis */
+.clients {
+    padding: 92px 0 98px;
+    background-color: var(--deep-teal);
+    background-image: url("assets/icons/bg-pattern-home-4-about-3.svg");
+    background-repeat: no-repeat;
+    background-position: left -98px top -95px;
+}
+
+.clients-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.clients-grid img {
+    display: block;
+    width: auto;
+    max-width: 162px;
+    max-height: 28px;
+    object-fit: contain;
+}
+
