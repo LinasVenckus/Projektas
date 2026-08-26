@@ -22,10 +22,14 @@
 .navigation-list a {
     color: #ffffff;
     text-decoration: none;
-    font-family: "Livvic" system-ui, -apple-system, "Segoe UI", "Roboto", sans-serif;
+    font-family: "Livvic", system-ui, -apple-system, "Segoe UI", "Roboto", sans-serif;
     font-size: 18px;
     font-weight: semi bold;
     line-height: 28px;
+}
+
+a:hover {
+    color:#F67E7E;
 }
 
 .button-top {
