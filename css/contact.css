@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+main {
+    background-color: #014E56;
+    padding: 164px;
+}
+#icon-left {
+    position: absolute;
+        left: -100px;
+}
+#icon-right {
+    position: absolute;
+        right: -100px;
+        bottom: 0px;
+}
+h1 {
+    color: #FFFFFF;
+    font-family: 'Livvic', sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+}
+h2 {
+    color: #F67E7E;
+    font-family: 'Livvic', sans-serif;
+    font-weight: bold;
+}
+.about-us div {
+    display: flex;
+}
+p {
+    color: #FFFFFF;
+}
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+}
+.left-side {
+    max-width: 540px;
+}
+.right-side {
+    max-width: 540px;
+}
+.right-side form {
+    display: flex;
+    flex-direction: column;
+}
+input, textarea {
+    padding-left: 14px;
+    color: #FFFFFF;
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    margin: 20px;
+    width: 540px;
+    height: 42px;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #79C8C7;
+}
+input::placeholder, textarea::placeholder {
+    color: #99acae;
+}
+button {
+    width: 123px;
+    height: 48px;
+    background-color: #FFFFFF;
+    color: #014E56;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
