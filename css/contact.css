@@ -1,0 +1,103 @@
+html, body {
+    height: 100%;
+    max-width: 1440px;
+    margin: 0px;
+}
+header {
+    background-color: #014E56;
+}
+main {
+    background-color: #014E56;
+    padding: 0px 164px 114px 164px;
+    position: relative;
+    overflow: hidden;
+}
+#icon-left {
+    position: absolute;
+        left: -100px;
+}
+#icon-right {
+    position: absolute;
+        right: -100px;
+        bottom: 0px;
+}
+h1 {
+    color: #FFFFFF;
+    font-family: 'Livvic', sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+}
+h2 {
+    color: #F67E7E;
+    font-family: 'Livvic', sans-serif;
+    font-weight: bold;
+    margin-bottom: 43px;
+}
+.about-us div {
+    display: flex;
+    height: 72px;
+    margin-bottom: 8px;
+}
+p {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Livvic', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-left: 23px;
+}
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+}
+.left-side {
+    max-width: 540px;
+}
+.right-side {
+    max-width: 540px;
+}
+.right-side form {
+    display: flex;
+    flex-direction: column;
+}
+input, textarea {
+    padding-bottom: 24px;
+    padding-left: 14px;
+    color: #FFFFFF;
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    margin-bottom: 25px;
+    width: 540px;
+    height: 14px;
+    font-family: 'Livvic', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+}
+textarea {
+    height: 84px;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #79C8C7;
+}
+input::placeholder, textarea::placeholder {
+    color: #99acae;
+}
+#submit {
+    width: 123px;
+    height: 48px;
+    background-color: #FFFFFF;
+    color: #014E56;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    font-family: 'Livvic', sans-serif;
+}
