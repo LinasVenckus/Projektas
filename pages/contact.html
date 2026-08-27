@@ -12,26 +12,27 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/globalnav.css">
+    <link rel="stylesheet" href="../css/globalfooter.css">
     <script src="../js/main.js" defer></script>
 </head>
 
 <body>
     <header class="header">
 
-      <nav class="nav-bar-header">
-        <a href="/" class="logo"><img src="../assets/icons/logo.svg" alt="myteam"></a>
+        <nav class="nav-bar-header">
+            <a href="/" class="logo"><img src="../assets/icons/logo.svg" alt="myteam"></a>
 
-        <ul class="navigation-list">
-          <li>
-            <a href="../index.html">home</a>
-          </li>
-          <li>
-            <a href="about.html">about</a>
-          </li>
-        </ul>
+            <ul class="navigation-list">
+                <li>
+                    <a href="../index.html">home</a>
+                </li>
+                <li>
+                    <a href="about.html">about</a>
+                </li>
+            </ul>
 
-        <button type="button" class="button-top">contact us</button>
-      </nav>
+            <button type="button" class="button-top">contact us</button>
+        </nav>
 
     </header>
     <main>
@@ -39,10 +40,12 @@
 
 
         <div class="contact-section">
-            
-            <img id="icon-left" src="../assets/icons/bg-pattern-about-2-contact-1.svg" alt="../assets/icons/bg-pattern-about-2-contact-1.svg">
-            <img id="icon-right" src="../assets/icons/bg-pattern-contact-2.svg" alt="../assets/icons/bg-pattern-contact-2.svg">
-            
+
+            <img id="icon-left" src="../assets/icons/bg-pattern-about-2-contact-1.svg"
+                alt="../assets/icons/bg-pattern-about-2-contact-1.svg">
+            <img id="icon-right" src="../assets/icons/bg-pattern-contact-2.svg"
+                alt="../assets/icons/bg-pattern-contact-2.svg">
+
             <!-- Left side -->
             <div class="left-side">
                 <h1>Contact</h1>
@@ -52,21 +55,21 @@
                 <div class="about-us">
 
                     <div>
-                            <img src="../assets/icons/icon-person.svg" alt="../assets/icons/icon-person.svg">
+                        <img src="../assets/icons/icon-person.svg" alt="../assets/icons/icon-person.svg">
                         <p>
                             The quality of our talent network
                         </p>
                     </div>
 
                     <div>
-                            <img src="../assets/icons/icon-cog.svg" alt="../assets/icons/icon-cog.svg">
+                        <img src="../assets/icons/icon-cog.svg" alt="../assets/icons/icon-cog.svg">
                         <p>
                             Usage & implementation of our software
                         </p>
                     </div>
 
                     <div>
-                            <img src="../assets/icons/icon-chart.svg" alt="../assets/icons/icon-chart.svg">
+                        <img src="../assets/icons/icon-chart.svg" alt="../assets/icons/icon-chart.svg">
                         <p>
                             How we help drive innovation
                         </p>
@@ -76,58 +79,68 @@
 
             <!-- Right side -->
             <div class="right-side">
-
-                        <input type="text" id="name" name="name" placeholder="Name">
-
-                        <input type="text" id="email" name="email" placeholder="Email Adress">
-
-                        <input type="text" id="company" name="company" placeholder="Company Name">
-
-                        <input type="text" id="title" name="title" placeholder="Title">
-
-                        <textarea type="text" id="message" name="message" placeholder="Message"></textarea>
-
+                <div>
+                <input type="text" id="name" name="name" placeholder="Name">
+                <span class="error">This field is required</span>
+                </div>
+                <div>
+                <input type="text" id="email" name="email" placeholder="Email Adress">
+                <span class="error">This field is required</span>
+                </div>
+                <div>
+                <input type="text" id="company" name="company" placeholder="Company Name">
+                <span class="error">This field is required</span>                    
+                </div>
+                <div>
+                <input type="text" id="title" name="title" placeholder="Title">
+                <span class="error">This field is required</span>
+                </div>
+                <div>
+                <textarea id="message" name="message" placeholder="Message"></textarea>
+                <span class="error">This field is required</span>
+                </div>
                 <button id="submit" type="submit">submit</button>
             </div>
 
         </div>
-
     </main>
-    <footer>
-        <div>
+    <footer class="footer">
+        <div class="footer-left">
             <nav class="nav-bar-footer">
-            <a href="/" class="logo"><img src="assets/icons/logo.svg" alt="myteam" /></a>
+                <a href="/" class="logo"><img src="../assets/icons/logo.svg" alt="myteam" /></a>
 
-            <ul class="navigation-list">
-                <li>
-                <a href="index.html">home</a>
-                </li>
-                <li>
-                <a href="pages/about.html">about</a>
-                </li>
-            </ul>
+                <ul class="navigation-list">
+                    <li>
+                        <a href="../index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">about</a>
+                    </li>
+                </ul>
             </nav>
+
+
+            <address>
+                <p>987 Hillcrest Lane<br> Irvine, CA<br> California 92714<br> Call Us: 949-833-7432</p>
+            </address>
+
         </div>
 
-        <address>
-            <p>987 Hillcrest Lane<br> Irvine, CA<br> California 92714<br> Call Us: 949-833-7432</p>
-        </address>
-
-        <div>
+        <div class="footer-right">
             <ul class="social-list">
-            <li>
-                <a href=""><img src="assets/icons/icon-facebook.svg" alt="facebook" /></a>
-            </li>
-            <li>
-                <a href=""><img src="assets/icons/icon-pinterest.svg" alt="pinterest" /></a>
-            </li>
-            <li>
-                <a href=""><img src="assets/icons/icon-twitter.svg" alt="twitter" /></a>
-            </li>
+                <li>
+                    <a href=""><img src="../assets/icons/icon-facebook.svg" alt="facebook" /></a>
+                </li>
+                <li>
+                    <a href=""><img src="../assets/icons/icon-pinterest.svg" alt="pinterest" /></a>
+                </li>
+                <li>
+                    <a href=""><img src="../assets/icons/icon-twitter.svg" alt="twitter" /></a>
+                </li>
             </ul>
 
             <p>Copyright 2020. All Rights Reserved</p>
-      </div>
+        </div>
     </footer>
 </body>
 
