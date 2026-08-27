@@ -1,8 +1,7 @@
 .nav-bar-header {
-  height: 48px;
+  height: 190px;
   max-width: 1110px;
   margin: auto;
-  margin-top: 73px;
   display: flex;
   align-items: center;
   background-color: #014E56;
@@ -23,10 +22,14 @@
 .navigation-list a {
     color: #ffffff;
     text-decoration: none;
-    font-family: "Livvic" system-ui, -apple-system, "Segoe UI", "Roboto", sans-serif;
+    font-family: "Livvic", system-ui, -apple-system, "Segoe UI", "Roboto", sans-serif;
     font-size: 18px;
     font-weight: semi bold;
     line-height: 28px;
+}
+
+a:hover {
+    color:#F67E7E;
 }
 
 .button-top {
