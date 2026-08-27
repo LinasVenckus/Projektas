@@ -14,6 +14,7 @@ main {
     padding: 0px 164px 114px 164px;
     position: relative;
     overflow: hidden;
+    height: 510px;
 }
 #icon-left {
     position: absolute;
@@ -66,6 +67,9 @@ p {
     display: flex;
     flex-direction: column;
 }
+.right-side > div {
+    margin-bottom: 25px;
+}
 input, textarea {
     padding-bottom: 24px;
     padding-left: 14px;
@@ -73,7 +77,6 @@ input, textarea {
     border: none;
     border-bottom: 1px solid white;
     background: none;
-    margin-bottom: 25px;
     width: 540px;
     height: 14px;
     font-family: 'Livvic', sans-serif;
@@ -91,6 +94,23 @@ input:focus, textarea:focus {
 input::placeholder, textarea::placeholder {
     color: #99acae;
 }
+.error {
+    position: absolute;
+    display: none;
+    color: #F67E7E;
+    margin-top: 4px;
+    font-family: "Livvic";
+    font-size: 10px;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 14px;
+}
+.error-active {
+    border-color: #F67E7E;
+}
+.error-active::placeholder {
+  color: #a07173;
+}
 #submit {
     width: 123px;
     height: 48px;
@@ -104,3 +124,4 @@ input::placeholder, textarea::placeholder {
     font-weight: 600;
     font-family: 'Livvic', sans-serif;
 }
+
