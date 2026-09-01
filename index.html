@@ -11,6 +11,9 @@
     href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/globalnav.css">
+  <link rel="stylesheet" href="css/globalsection.css">
+  <link rel="stylesheet" href="css/globalfooter.css">
   <script src="js/main.js" defer></script>
 </head>
 
@@ -34,12 +37,16 @@
       </nav>
 
       <div class="header-find">
+        <img id="icon-left" src="assets/icons/bg-pattern-home-1.svg"
+          alt="assets/icons/bg-pattern-home-1.svg">
         <h1>Find the<br>best <span>talent</span></h1>
         <div>
           <hr class="hr1" />
           <p>Finding the right people and building high performing teams can be hard. Most companies aren't
             topping into the abundance of global talent. We're about to change that.</p>
         </div>
+        <img id="icon-right" src="assets/icons/bg-pattern-home-2.svg"
+                alt="assets/icons/bg-pattern-home-2.svg">
       </div>
 
     </header>
@@ -82,41 +89,47 @@
       </section>
 
       <section class="section-delivering">
-        <div>
+        <img class="section-delivering-icon-top" src="assets/icons/bg-pattern-home-4-about-3.svg"
+          alt="assets/icons/bg-pattern-home-4-about-3.svg">
+        <img class="section-delivering-icon-bottom" src="assets/icons/bg-pattern-home-5.svg"
+          alt="assets/icons/bg-pattern-home-5.svg">
+        <div class="section-delivering-div">
           <h2>Delivering real results for top companies. Some of our <span>success stories.</span></h2>
           <div class="articles-delivering">
             <article>
-              <blockquote>"The team perfect fit the specialized skill set required. They focused on the most
+              <img class="quotes-icon" src="assets/icons/icon-quotes.svg" alt="assets/icons/icon-quotes.svg">
+              <blockquote class="body2">"The team perfect fit the specialized skill set required. They focused on the most
                 essential features helping us launch the platform eught months faster than planned."
               </blockquote>
-              <p>Kady Baker</p>
-              <p>Product Manager at Bookmark</p>
-              <img src="" alt="">
+              <p class="name body1">Kady Baker</p>
+              <p class="founders">Product Manager at Bookmark</p>
+              <img class="people" src="assets/images/avatar-kady.jpg" alt="assets/images/avatar-kady.jpg">
             </article>
 
             <article>
-              <blockquote>"We needed to automate our entire onboarding process. The team came in and built out
+              <img class="quotes-icon" src="assets/icons/icon-quotes.svg" alt="assets/icons/icon-quotes.svg">
+              <blockquote class="body2">"We needed to automate our entire onboarding process. The team came in and built out
                 the whole journey. Since going live, user retention has gone through the roof!"
               </blockquote>
-              <p>Aiysha Reese</p>
-              <p>Founder of Manage</p>
-              <img src="" alt="">
-            </article>
-
-            <article>
-              <blockquote>"Amazing. Our team helped us build an app that
+              <p class="name body1">Aiysha Reese</p>
+              <p class="founders">Founder of Manage</p>
+              <img class="people" src="assets/images/avatar-aiysha.jpg" alt=assets/images/avatar-aiysha.jpg"> </article>
+                <article>
+              <img class="quotes-icon" src="assets/icons/icon-quotes.svg" alt="assets/icons/icon-quotes.svg">
+              <blockquote class="body2">"Amazing. Our team helped us build an app that
                 delivered a new experience for hiring a physio.
                 The launch was an instant success with 100k downloads in the first month."
               </blockquote>
-              <p>Arthur Clarke</p>
-              <p>Co-founder of MyPhysio</p>
-              <img src="" alt="">
+              <p class="name body1">Arthur Clarke</p>
+              <p class="founders">Co-founder of MyPhysio</p>
+              <img class="people" src="assets/images/avatar-arthur.jpg" alt="assets/images/avatar-arthur.jpg">
             </article>
           </div>
         </div>
       </section>
 
       <section class="section-ready">
+        <img src="assets/icons/bg-pattern-home-6-about-5.svg" alt="assets/icons/bg-pattern-home-6-about-5.svg">
         <div>
           <h2>Ready to get started?</h2>
           <button type="button" class="button-bottom">contact us</button>
@@ -125,7 +138,7 @@
     </main>
 
     <footer class="footer">
-      <div>
+      <div class="footer-left">
         <nav class="nav-bar-footer">
           <a href="/" class="logo"><img src="assets/icons/logo.svg" alt="myteam" /></a>
 
@@ -138,13 +151,15 @@
             </li>
           </ul>
         </nav>
+
+
+        <address>
+          <p>987 Hillcrest Lane<br> Irvine, CA<br> California 92714<br> Call Us: 949-833-7432</p>
+        </address>
+
       </div>
 
-      <address>
-        <p>987 Hillcrest Lane<br> Irvine, CA<br> California 92714<br> Call Us: 949-833-7432</p>
-      </address>
-
-      <div>
+      <div class="footer-right">
         <ul class="social-list">
           <li>
             <a href=""><img src="assets/icons/icon-facebook.svg" alt="facebook" /></a>
