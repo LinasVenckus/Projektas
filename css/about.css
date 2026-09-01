@@ -14,9 +14,13 @@
 }
 
 body {
+    max-width: 1440px;
     font-family: "Livvic", sans-serif;
-    background: var(--primary-teal);
     color: var(--text-light);
+}
+
+.header {
+    background: var(--primary-teal);
 }
 
 .container {
