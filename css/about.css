@@ -66,11 +66,41 @@ body {
 
 /* Korteliu sekcija 3x2 tinklelis */
 .directors {
-    padding: 92px 0 130px;
+    position: relative;
+    padding: 64px 0 90px;
     background-color: var(--dark-teal);
-    background-image: url("assets/icons/bg-pattern-about-2-contact-1.svg"), url("assets/icons/bg-pattern-home-4-about-3.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: left -100px top 0, right -95px bottom -100px;
+    overflow: hidden;
+}
+
+.directors::before {
+    content: "";
+    position: absolute;
+    left: -80px;
+    top: 0;
+    width: 180px;
+    height: 180px;
+    background-image: url("../assets/icons/bg-pattern-about-2-contact-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.directors::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    width: 120px;
+    height: 80px;
+    background-image: url("../assets/icons/bg-pattern-home-4-about-3.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.directors > .container {
+    position: relative;
+    z-index: 1;
 }
 
 .directors h2,
@@ -78,7 +108,7 @@ body {
     text-align: center;
     font-size: 48px;
     line-height: 3rem;
-    margin-bottom: 3.25rem;
+    margin-bottom: 48px;
 }
 
 .directors-grid,
@@ -90,7 +120,7 @@ body {
 .directors-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 30px;
 }
 
 .director-card article {
@@ -99,6 +129,7 @@ body {
     text-align: center;
     padding: 2rem 1.5rem 3.2rem;
     position: relative;
+    margin-bottom: 48px;
 }
 
 .director-card img {
@@ -138,6 +169,10 @@ body {
     cursor: pointer;
 }
 
+.director-card {
+    padding-bottom: 48px;
+}
+
 .director-card--quote article {
     display: flex;
     flex-direction: column;
@@ -171,11 +206,28 @@ body {
 
 /* Klientu dalis */
 .clients {
-    padding: 92px 0 98px;
+    position: relative;
+    overflow: hidden;
+    padding: 120px 0 120px;
     background-color: var(--deep-teal);
-    background-image: url("assets/icons/bg-pattern-home-4-about-3.svg");
+}
+
+.clients::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url("../assets/icons/bg-pattern-about-4.svg");
     background-repeat: no-repeat;
-    background-position: left -98px top -95px;
+    background-size: contain;
+    z-index: 0;
+}
+
+.clients > .container {
+    position: relative;
+    z-index: 1;
 }
 
 .clients-grid {
@@ -183,7 +235,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2.5rem;
+    column-gap: 5rem;
+    row-gap: 3rem;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .clients-grid img {
@@ -192,5 +247,10 @@ body {
     max-width: 162px;
     max-height: 28px;
     object-fit: contain;
+}
+
+.clients-grid li:last-child img {
+    max-width: 220px;
+    max-height: 40px;
 }
 
