@@ -1,7 +1,7 @@
 .nav-bar-header {
   height: 190px;
   max-width: 1110px;
-  margin: auto;
+  margin: 2px auto 0;
   display: flex;
   align-items: center;
   background-color: #014E56;
@@ -13,6 +13,8 @@
 }
 
 .navigation-list {
+    width: 140px;
+    height: 28px;
     display: flex;
     gap: 40px;
     margin-left: 80px;
@@ -22,9 +24,9 @@
 .navigation-list a {
     color: #ffffff;
     text-decoration: none;
-    font-family: "Livvic", system-ui, -apple-system, "Segoe UI", "Roboto", sans-serif;
+    font-family: "Livvic", sans-serif;
     font-size: 18px;
-    font-weight: semi bold;
+    font-weight: 600;
     line-height: 28px;
 }
 
@@ -40,9 +42,9 @@ a:hover {
     border-radius: 24px;
     background: transparent;
     color: #ffffff;
-    font-family: "Livvic" system-ui, -apple-system, "Segoe UI", "Roboto", sans-serif;
+    font-family: "Livvic", sans-serif;
     font-size: 18px;
-    font-weight: semi bold;
+    font-weight: 600;
     line-height: 28px;
     cursor: pointer;
 }
