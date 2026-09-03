@@ -87,8 +87,8 @@ body {
     position: absolute;
     left: -90px;
     top: 0;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     background-image: url("../assets/icons/bg-pattern-about-2-contact-1.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -100,8 +100,8 @@ body {
     position: absolute;
     right: -10px;
     bottom: -10px;
-    width: 120px;
-    height: 80px;
+    width: 147px;
+    height: 100px;
     background-image: url("../assets/icons/bg-pattern-home-4-about-3.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -136,7 +136,9 @@ body {
 }
 
 .director-card article {
-    min-height: 252px;
+    width: 350px;
+    max-width: 100%;
+    height: 281px;
     background: var(--card-teal);
     text-align: center;
     padding: 2rem 1.5rem 3.2rem;
@@ -183,7 +185,7 @@ body {
 
 .director-card:last-child .card-toggle {
     background: #79c8c7;
-    transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%);
     width: 56px;
     height: 56px;
     font-size: 2rem;
@@ -219,10 +221,11 @@ body {
 }
 
 .social-links img {
-    width: 20px;
+    width: auto;
     height: 20px;
     margin: 0;
     border: 0;
+    border-radius: 0;
 }
 
 /* Klientu dalis */
