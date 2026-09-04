@@ -1,7 +1,8 @@
 .nav-bar-header {
   height: 190px;
   max-width: 1110px;
-  margin: 2px auto 0;
+  margin: 0px auto 0;
+  padding-top: 2px;
   display: flex;
   align-items: center;
   background-color: #014E56;
