@@ -142,7 +142,7 @@ body {
 .header-find {
   width: 1110px;
   height: 200px;
-  margin: 58px auto;
+  margin: 60px auto;
   display: flex;
   gap: 30px;
 }
@@ -152,7 +152,7 @@ body {
   height: 200px;
   margin: 0;
   font-family: "Livvic", sans-serif;
-  font-size: 80px;
+  font-size: 100px;
   font-weight: bold;
   line-height: 100px;
   color: #ffffff;
@@ -170,15 +170,17 @@ body {
 .hr1 {
   width: 50px;
   height: 4px;
-  margin: 0 0 68px;
+  margin: 0 0 80px;
   border: none;
   background-color: #79c8c7;
 }
 
 .header-find p {
+  width: 445px;
+  height: 112px;
   font-family: "Livvic", sans-serif;
   font-size: 18px;
-  font-weight: semi bold;
+  font-weight: 600;
   line-height: 28px;
   color: #ffffff;
 }
@@ -278,6 +280,7 @@ blockquote {
   height: 684px;
   color: #ffffff;
   position: relative;
+  overflow: hidden;
 }
 
 #section-build-icon {
@@ -287,10 +290,10 @@ blockquote {
 }
 
 .section-build-container {
-  max-width: 1100px;
+  max-width: 1110px;
   height: 404px;
   margin: 0 auto;
-  padding-top: 134px;
+  padding-top: 140px;
 }
 
 .hr2 {
@@ -317,6 +320,7 @@ blockquote {
 
 .articles-build {
   width: 540px;
+  height: 346px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -351,7 +355,7 @@ blockquote {
   font-family: "Livvic", sans-serif;
   font-size: 15px;
   line-height: 25px;
-  font-weight: 500;
+  font-weight: 600;
   color: #ffffff;
   opacity: 0.8;
 }
