@@ -22,6 +22,8 @@
 .section-ready h2 {
     font-size: 48px;
     line-height: 48px;
+    max-width: 504px;
+    max-height: 48px;
 }
 .button-bottom {
     width: 153px;
@@ -38,4 +40,19 @@
 .button-bottom:hover {
     color: #f67e7e;
     background-color: #012f34;
+}
+
+                                                            /*Tablet*/
+@media (max-width: 768px) {
+.section-ready h2 {
+    font-size: 32px;
+    line-height: 32px;
+    max-width: 336px;
+    color: wheat;
+}
+.section-ready div {
+    width: 573px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
 }
