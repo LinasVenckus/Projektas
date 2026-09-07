@@ -6,6 +6,11 @@ footer {
     justify-content: center;
     align-items: center;
 }
+.footer-logo img{
+    width: 159.95px;
+    height: 40px;
+    display: block;
+}
 .footer-left {
     display: flex;
     width: 730px;
@@ -50,4 +55,55 @@ footer p {
 .social-list img {
     height: 24px;
     width: 24px;
+}
+                                                            /*Tablet*/
+@media (max-width: 768px) {
+footer {
+    height: 271px;
+    padding-left: 39px;
+    padding-right: 40px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    flex-direction: column;
+}
+.nav-bar-footer {
+    height: 102px;
+    width: 107px;
+    align-items: space-between;
+}
+.footer-left {
+    justify-content: space-between;
+    width: 689px;
+    height: 102px;
+}
+address {
+    text-align: right;
+    width: 280px;
+    height: 100px;
+    justify-content: end;
+}
+.footer-right {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 689px;
+    height: 25px;
+    margin-top: 32px;
+}
+.footer-logo img{
+    width: 95.97px;
+    height: 24px;
+}
+.nav-bar-footer {
+    height: 102px;
+    width: 107px;
+}
+.nav-bar-footer .navigation-list li a {
+    width: 41px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px;
+}
+.nav-bar-footer .navigation-list {
+    gap: 24px;
+}
 }
