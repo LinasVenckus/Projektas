@@ -49,13 +49,11 @@ footer p {
 }
 .social-list {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 16px;
 }
-.social-list img {
-    height: 24px;
-    width: 24px;
-}
+
                                                             /*Tablet*/
 @media (max-width: 768px) {
 footer {
@@ -96,6 +94,9 @@ address {
 .nav-bar-footer {
     height: 102px;
     width: 107px;
+}
+.nav-bar-footer .navigation-list {
+    height: 25px;
 }
 .nav-bar-footer .navigation-list li a {
     width: 41px;
