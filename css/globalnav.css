@@ -32,7 +32,7 @@
 }
 
 a:hover {
-    color:#F67E7E;
+    color: #f67e7e;
 }
 
 .button-top {
@@ -49,7 +49,31 @@ a:hover {
     line-height: 28px;
     cursor: pointer;
 }
+
 .button-top:hover {
-    color: #014E56;
+    color: #014e56;
     background-color: #ffffff;
+}
+
+/* media queries tablet */
+@media (max-width: 768px) {
+    .nav-bar-header {
+        height: 190px;
+        width: 703px;
+        padding-bottom: 17px;
+    }
+
+    .logo {
+        width: 128px;
+        height: 32px;
+        margin-left: 14px;
+    }
+
+    .navigation-list {
+        margin-left: 48px;
+    }
+
+    .button-top {
+        margin-left: auto;
+    }
 }
