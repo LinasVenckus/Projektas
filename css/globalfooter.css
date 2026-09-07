@@ -24,11 +24,12 @@ footer .navigation-list {
 address {
     display: flex;
     margin: 0px;
+    font-style: normal;
 }
 
 footer p {
     color: #99a8a9;
-        font-size: 15px;
+    font-size: 15px;
     line-height: 25px;
     font-weight: 600;
 }
