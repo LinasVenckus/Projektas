@@ -371,8 +371,3 @@ body {
   height: 66px;
 }
 
-@media (max-width: 768px) {
-  body {
-      max-width: 768px;
-  }
-}

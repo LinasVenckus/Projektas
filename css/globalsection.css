@@ -5,6 +5,7 @@
     height: 200px;
     background-color: #F67E7E;
     position: relative;
+    overflow: hidden;
 }
 .section-ready img {
     position: absolute;
@@ -41,18 +42,19 @@
     color: #f67e7e;
     background-color: #012f34;
 }
-
                                                             /*Tablet*/
 @media (max-width: 768px) {
 .section-ready h2 {
     font-size: 32px;
     line-height: 32px;
     max-width: 336px;
-    color: wheat;
 }
 .section-ready div {
     width: 573px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 97px;
+    margin-right: 98px;
+}
+.section-ready img {
+    bottom: -22px;
 }
 }
