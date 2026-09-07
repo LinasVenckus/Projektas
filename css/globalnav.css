@@ -59,15 +59,21 @@ a:hover {
 @media (max-width: 768px) {
     .nav-bar-header {
         height: 190px;
-        width: 689px;
+        width: 703px;
+        padding-bottom: 17px;
     }
 
     .logo {
         width: 128px;
         height: 32px;
+        margin-left: 14px;
     }
 
     .navigation-list {
         margin-left: 48px;
+    }
+
+    .button-top {
+        margin-left: auto;
     }
 }
