@@ -37,6 +37,7 @@ footer p {
     font-size: 15px;
     line-height: 25px;
     font-weight: 600;
+    font-family: "Livvic", sans-serif;
 }
 .footer-right {
     display: flex;
@@ -49,18 +50,16 @@ footer p {
 }
 .social-list {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 16px;
 }
-.social-list img {
-    height: 24px;
-    width: 24px;
-}
+
                                                             /*Tablet*/
 @media (max-width: 768px) {
 footer {
     height: 271px;
-    padding-left: 39px;
+    padding-left: 53px;
     padding-right: 40px;
     padding-top: 56px;
     padding-bottom: 56px;
@@ -97,6 +96,10 @@ address {
     height: 102px;
     width: 107px;
 }
+.nav-bar-footer .navigation-list {
+    margin: 0;
+    height: 25px;
+}
 .nav-bar-footer .navigation-list li a {
     width: 41px;
     height: 25px;
@@ -105,5 +108,8 @@ address {
 }
 .nav-bar-footer .navigation-list {
     gap: 24px;
+}
+.social-list {
+    transform: translateY(4px);
 }
 }
