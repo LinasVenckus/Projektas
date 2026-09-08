@@ -370,4 +370,49 @@ body {
   width: 66px;
   height: 66px;
 }
+                                                            /*Tablet*/
+@media (max-width: 768px) {
+                                                  /* Section-delivering*/
+.section-delivering {
+    height: 1199px;
+    width: 768px;
+    margin: 0;
+    padding: 100px 98px 100px 97px;
+}
+.section-delivering-div {
+  all: unset;
+  height: 999px;
+  width: 573px;
+  margin: 0;
+  padding: 0;
+  gap: 48px;
+}
+.section-delivering-div h2 {
+  height: 96px;
+  width: 573px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.articles-delivering {
+  flex-direction: column;
+  gap: 48px;
 
+}
+.articles-delivering article{
+  height: 253px;
+  width: 573px;
+}
+.articles-delivering article blockquote {
+  height: 75px;
+  width: 573px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.people {
+  margin-top: 16px;
+}
+.name, .founders {
+  margin: 0;
+}
+}
