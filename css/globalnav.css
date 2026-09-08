@@ -57,6 +57,7 @@ a:hover {
 }
 .menu {
         display: none;
+        cursor: pointer;
 }
 /* media queries tablet */
 @media (max-width: 768px) {
@@ -86,17 +87,13 @@ a:hover {
     .menu {
         display: block;
     }
+
     .nav-bar-header {
+        justify-content: space-between;
         height: 176px;
         width: 327px;
         margin: 0px 24px;
         transform: translateX(-7px);
-    }
-
-    .logo img {
-        width: 128px;
-        height: 32px;
-        margin-left: 14px;
     }
 
     .navigation-list {

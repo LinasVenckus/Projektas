@@ -248,8 +248,10 @@ h2 {
 }
                                                             /*Mobile*/
 @media (max-width: 375px) {
+
 header {
     height: 128px;
+    width: 375px;
 }
 main {
     height: 1004px;
