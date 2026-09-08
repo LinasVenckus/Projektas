@@ -8,9 +8,10 @@
   background-color: #014E56;
 }
 
-.logo {
+.logo img{
     width: 159.95px;
     height: 40px;
+    display: block;
 }
 
 .navigation-list {
@@ -63,7 +64,7 @@ a:hover {
         padding-bottom: 17px;
     }
 
-    .logo {
+    .logo img{
         width: 128px;
         height: 32px;
         margin-left: 14px;
