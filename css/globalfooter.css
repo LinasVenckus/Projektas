@@ -115,5 +115,44 @@ address {
 }
                                                             /*Mobile*/
 @media (max-width: 375px) {
-    
+footer {
+    height: 432px;
+    padding: 66px 20px 64px 20px;
+}
+.footer-left {
+    height: 197px;
+    width: 327px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.nav-bar-footer {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 107px;
+    height: 73px;
+    gap: 24px;
+}
+.nav-bar-footer .navigation-list {
+    margin: 0;
+    width: 107px;
+    height: 25px;
+}
+.footer-right {
+    height: 65px;
+    width: 255px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+address {
+    justify-content: center;
+    align-items: center;
+    width: 327px;
+    height: 100px;
+    text-align: center;
+}
 }
