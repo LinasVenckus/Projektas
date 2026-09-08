@@ -97,6 +97,7 @@ address {
 }
 .nav-bar-footer .navigation-list {
     height: 25px;
+    margin-top: 53px;
 }
 .nav-bar-footer .navigation-list li a {
     width: 41px;
