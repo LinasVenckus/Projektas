@@ -58,6 +58,7 @@ a:hover {
 .menu {
         display: none;
         cursor: pointer;
+        transform: translate(8px, 7px);
 }
 /* media queries tablet */
 @media (max-width: 768px) {
@@ -82,7 +83,7 @@ a:hover {
         margin-left: auto;
     }
 }
-/* media queries tablet */
+/* media queries mobile */
 @media (max-width: 375px) {
     .menu {
         display: block;
@@ -93,10 +94,13 @@ a:hover {
         height: 128px;
         width: 327px;
         margin: 0px 24px;
-        transform: translateX(-7px);
     }
 
-    header .navigation-list {
+    .logo img {
+        transform: translate(-7px, 8px);
+    }
+
+    .nav-bar-header .navigation-list {
         display: none;
     }
 
