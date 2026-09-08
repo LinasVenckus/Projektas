@@ -59,3 +59,25 @@
     bottom: -22px;
 }
 }
+                                                            /*Mobile*/
+@media (max-width: 375px) {
+.section-ready {
+    height: 302px;
+}
+.section-ready div {
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 327px;
+    height: 136px;
+    margin: 83px 24px;
+    text-align: center;
+    gap: 24px;
+}
+.section-ready h2 {
+    margin: 0;
+            max-width: 327px;
+        max-height: none;
+}
+}
