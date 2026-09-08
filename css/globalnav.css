@@ -96,7 +96,7 @@ a:hover {
         transform: translateX(-7px);
     }
 
-    .navigation-list {
+    header .navigation-list {
         display: none;
     }
 
