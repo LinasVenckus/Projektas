@@ -37,7 +37,6 @@ footer p {
     font-size: 15px;
     line-height: 25px;
     font-weight: 600;
-    font-family: "Livvic", sans-serif;
 }
 .footer-right {
     display: flex;
@@ -59,7 +58,7 @@ footer p {
 @media (max-width: 768px) {
 footer {
     height: 271px;
-    padding-left: 53px;
+    padding-left: 39px;
     padding-right: 40px;
     padding-top: 56px;
     padding-bottom: 56px;
@@ -97,8 +96,8 @@ address {
     width: 107px;
 }
 .nav-bar-footer .navigation-list {
-    margin: 0;
     height: 25px;
+    margin-top: 53px;
 }
 .nav-bar-footer .navigation-list li a {
     width: 41px;
