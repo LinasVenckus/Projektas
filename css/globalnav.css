@@ -55,7 +55,7 @@ a:hover {
     color: #014e56;
     background-color: #ffffff;
 }
-.menu {
+.open {
         display: none;
         cursor: pointer;
         transform: translate(8px, 7px);
@@ -85,7 +85,7 @@ a:hover {
 }
 /* media queries mobile */
 @media (max-width: 375px) {
-    .menu {
+    .open {
         display: block;
     }
 
