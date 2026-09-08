@@ -2,6 +2,9 @@ const buttons = document.querySelectorAll(".button-top, .button-bottom");
 const inputs = document.querySelectorAll("input, textarea");
 const errors = document.querySelectorAll(".error");
 const submit = document.querySelector("#submit");
+const menu = document.getElementById("menu");
+const open = document.getElementById("open");
+const close = document.getElementById("close");
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -42,5 +45,4 @@ submit.addEventListener("click", () => {
   errors.forEach((error) => {
     error.style.display = "none";
   });
-
 });

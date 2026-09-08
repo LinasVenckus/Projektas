@@ -246,3 +246,90 @@ h2 {
     transform: translate(-2px, -2px);
 }
 }
+                                                            /*Mobile*/
+@media (max-width: 375px) {
+
+header {
+    height: 128px;
+    width: 375px;
+}
+main {
+    height: 1004px;
+    padding: 32px 24px 88px 24px;
+}
+.contact-section {
+    width: 327px;
+    padding: 0;
+    height: 884px;
+    flex-direction: column;
+    margin: 0;
+    gap: 56px;
+}
+#icon-left {
+    display: none;
+}
+#icon-right {
+    bottom: -112px;
+}
+.left-side {
+    width: 327px;
+    height: 408px;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    width: 327px;
+    height: 40px;
+    padding: 0;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    transform: translateY(-8px);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 16px;
+    width: 200px;
+    height: 48px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    transform: translateY(-8px);
+}
+.about-us div:first-child {
+    transform: translate(-8px, -7px);
+}
+.about-us div:nth-child(2) {
+    transform: translateY(8px);
+}
+.about-us div:nth-child(3) {
+    transform: translateY(24px);
+}
+.about-us {
+    width: 327px;
+    height: 264px;
+}
+.about-us div {
+    width: 327px;
+    height: 72px;
+}
+.about-us p {
+    width: 232px;
+    height: 56px;
+}
+.right-side {
+    width: 327px;
+    height: 420px;
+    margin: 0;
+    transform: translateY(-8px);
+    height: auto;
+}
+.right-side div {
+    width: 325px;
+}
+input, textarea {
+    width: 325px;
+}
+
+}
