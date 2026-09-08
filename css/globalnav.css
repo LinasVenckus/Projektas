@@ -55,7 +55,9 @@ a:hover {
     color: #014e56;
     background-color: #ffffff;
 }
-
+.menu {
+        display: none;
+}
 /* media queries tablet */
 @media (max-width: 768px) {
     .nav-bar-header {
@@ -77,5 +79,31 @@ a:hover {
 
     .button-top {
         margin-left: auto;
+    }
+}
+/* media queries tablet */
+@media (max-width: 375px) {
+    .menu {
+        display: block;
+    }
+    .nav-bar-header {
+        height: 176px;
+        width: 327px;
+        margin: 0px 24px;
+        transform: translateX(-7px);
+    }
+
+    .logo img {
+        width: 128px;
+        height: 32px;
+        margin-left: 14px;
+    }
+
+    .navigation-list {
+        display: none;
+    }
+
+    .button-top {
+        display: none;
     }
 }
