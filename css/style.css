@@ -430,6 +430,9 @@ body {
     left: 206px;
     top: 600px;
   }
+  .success-stories {
+  display: none;
+}
                                                     /* Section-delivering*/
 .section-delivering {
     height: 1199px;
@@ -476,5 +479,8 @@ body {
 }
 .name, .founders {
   margin: 0;
+}
+.success-stories {
+  display: block;
 }
 }
