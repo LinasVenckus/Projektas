@@ -37,6 +37,7 @@ footer p {
     font-size: 15px;
     line-height: 25px;
     font-weight: 600;
+    font-family: 'Livvic', sans-serif;
 }
 .footer-right {
     display: flex;
