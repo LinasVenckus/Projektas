@@ -387,6 +387,9 @@ body {
   width: 66px;
   height: 66px;
 }
+  .success-stories {
+  display: none;
+}
                                                             /*Tablet*/
 @media (max-width: 768px) {
                                                          /* header dalis */
@@ -430,9 +433,7 @@ body {
     left: 206px;
     top: 600px;
   }
-  .success-stories {
-  display: none;
-}
+
                                                     /* Section-delivering*/
 .section-delivering {
     height: 1199px;
