@@ -239,12 +239,6 @@ h2 {
     font-weight: 700;
     font-size: 18px;
 }
-footer p{
-    font-size: 15;
-    font-weight: 600;
-    font-style: "Livvic";
-    line-height: 25px;
-}
 .about-us div:first-child{
     transform: translateX(-7px);
 }
