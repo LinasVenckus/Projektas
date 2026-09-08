@@ -248,4 +248,7 @@ footer p{
 .about-us div:first-child{
     transform: translateX(-7px);
 }
+#submit {
+    transform: translate(-2px, -2px);
+}
 }
