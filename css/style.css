@@ -387,6 +387,9 @@ body {
   width: 66px;
   height: 66px;
 }
+  .success-stories {
+  display: none;
+}
                                                             /*Tablet*/
 @media (max-width: 768px) {
                                                          /* header dalis */
@@ -430,6 +433,7 @@ body {
     left: 206px;
     top: 600px;
   }
+
                                                     /* Section-delivering*/
 .section-delivering {
     height: 1199px;
@@ -443,7 +447,6 @@ body {
   width: 573px;
   margin: 0;
   padding: 0;
-  gap: 48px;
 }
 .section-delivering-div h2 {
   height: 96px;
@@ -451,11 +454,16 @@ body {
   font-size: 32px;
   font-weight: 700;
   line-height: 32px;
+  font-family: "Livvic", sans-serif;
+  
 }
 .articles-delivering {
   flex-direction: column;
   gap: 48px;
 
+}
+.articles-delivering {
+    transform: translateY(-7px);
 }
 .articles-delivering article{
   height: 253px;
@@ -472,5 +480,8 @@ body {
 }
 .name, .founders {
   margin: 0;
+}
+.success-stories {
+  display: block;
 }
 }
