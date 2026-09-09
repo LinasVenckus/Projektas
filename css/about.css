@@ -424,34 +424,77 @@ body {
 /*Mobile*/
 @media (max-width: 375px) {
 
-    /*Header*/
-    .about-hero {
-        height: 520px;
-        width: 375px;
-    }
+.about-hero h1 {
+    height: 40px;
+    width: 327px;
+    line-height: 40px;
+    font-size: 40px;
+}
+.about-hero p {
+    width: 327px;
+    height: 196px;
+    line-height: 28px;
+    font-size: 15px;
+}
+                                                /*Clients section*/
+.clients {
+    height: 632px;
+    width: 375px;
+    padding: 88px 24px;
+    flex-direction: column;
+}
 
-    .about-hero__content {
-        height: 252px;
-        width: 327px;
-        margin-left: 24px;
-        margin-right: 24px;
-        margin-bottom: 108px;
-        margin-top: 32px;
-        gap: 16px;
-    }
+.clients::before {
+    top: -100px;
+    left: -100px;
+}
+.clients h2 {
+    width: 327px;
+    height: 32px;
+    margin: 0 auto 64px;
+    position: unset;
+    
+}
+.clients .container {
+    width: 327px;
+    height: 456px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .about-hero h1 {
-        height: 40px;
-        width: 327px;
-        line-height: 40px;
-        font-size: 40px;
-    }
+}
 
-    .about-hero p {
-        width: 327px;
-        height: 196px;
-        line-height: 28px;
-        font-size: 15px;
-    }
-
+.clients-grid {
+    margin-top: 100px;
+    flex-direction: column;
+    width: 360px;
+    height: 162.21px;
+    gap: 57px;
+    position: unset;
+}
+.clients-grid li:nth-child(1) img{
+    width: 146.56px;
+    height: 24.19px;
+    transform: translateY(9px);
+}
+.clients-grid li:nth-child(2) img{
+    width: 162.21px;
+    height: 19.92px;
+    transform: translateY(5px);
+}  
+.clients-grid li:nth-child(3) img{
+    width: 159.37px;
+    height: 24.19px;
+    transform: translateY(2px);
+}  
+.clients-grid li:nth-child(4) img{
+    width: 146.56px;
+    height: 24.19px;
+    transform: translateY(-3px);
+}  
+.clients-grid li:nth-child(5) img{
+    width: 86.8px;
+    height: 39.84px;
+    transform: translateY(-7px);
+}                          
 }
