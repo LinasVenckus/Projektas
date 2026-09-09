@@ -24,71 +24,80 @@ body {
 .container {
     max-width: 1110px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0;
 }
-
+                                                        /* header */
 .about-hero {
+    height: 517px;
     padding: 0 0 120px;
     background-color: var(--primary-teal);
     background-image: url("../assets/icons/bg-pattern-about-1-mobile-nav-1.svg");
     background-repeat: no-repeat;
-    background-position: right -98px top 145px;
+    background-position: right -100px bottom;
+    background-size: 200px 200px;
 }
 
 .about-hero__content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 44px;
-    align-items: start;
+    margin: 53px 165px 120px;
+    max-width: 1110px;
+    height: 156px;
+    display: flex;
+    gap: 30px;
 }
 
 .about-hero h1 {
+    height: 100px;
+    width: 350px;
     color: #FFFFFF;
     font-family: 'Livvic', sans-serif;
     font-weight: bold;
     font-size: 64px;
-    line-height: 64px;
+    line-height: 100px;
 }
 
-
+.about-hero__content div {
+    display: flex;
+    flex-direction: column;
+    height: 156px;
+    width: 730px;
+}
+.hr-about {
+    background-color: #F67E7E;
+    border: none;
+    width: 50px;
+    height: 4px;
+    margin-bottom: 40px;
+}
 .about-hero p {
-    max-width: 620px;
-    padding-top: 2rem;
+    max-width: 730px;
+    max-height: 112px;
     font-size: 18px;
     line-height: 28px;
     font-weight: 600;
-    position: relative;
 }
-
-.about-hero p::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50px;
-    height: 4px;
-    background: var(--accent-coral);
-}
+                                                        /* Section directors */
 
 /* Korteliu sekcija 3x2 tinklelis */
 .directors {
+    max-width: 1440px;
+    height: 1002px;
     padding: 92px 0 130px;
     position: relative;
     padding: 64px 0 90px;
     background-color: var(--dark-teal);
     background-image: url("assets/icons/bg-pattern-about-2-contact-1.svg"), url("assets/icons/bg-pattern-home-4-about-3.svg");
     background-repeat: no-repeat, no-repeat;
-    background-position: left -100px top 0, right -95px bottom -100px;
+    background-position: left -100px top 0, right -100px bottom -100px;
     overflow: hidden;
 }
 
 .directors::before {
     content: "";
     position: absolute;
-    left: -90px;
+    left: -100px;
     top: 0;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     background-image: url("../assets/icons/bg-pattern-about-2-contact-1.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -98,13 +107,13 @@ body {
 .directors::after {
     content: "";
     position: absolute;
-    right: -10px;
-    bottom: -10px;
-    width: 120px;
-    height: 80px;
+    right: 0;
+    bottom: 0;
+    width: 147px;
+    height: 100px;
     background-image: url("../assets/icons/bg-pattern-home-4-about-3.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 147px 100px;
     z-index: 0;
 }
 
@@ -117,9 +126,14 @@ body {
 .clients h2 {
     text-align: center;
     font-size: 48px;
-    line-height: 3rem;
-    margin-bottom: 3.25rem;
-    margin-bottom: 48px;
+    line-height: 48px;
+    margin-top: 75px;
+    padding-bottom: 65px;
+}
+
+.clients h2 {
+    position: relative;
+    top: -20px;
 }
 
 .directors-grid,
@@ -131,44 +145,64 @@ body {
 .directors-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    gap: 30px;
+    column-gap: 30px;
+    row-gap: 48px;
 }
 
 .director-card article {
-    min-height: 252px;
-    background: var(--card-teal);
+    width: 350px;
+    max-width: 100%;
+    height: 253px;
+    background: var(--deep-teal);
     text-align: center;
     padding: 2rem 1.5rem 3.2rem;
     position: relative;
-    margin-bottom: 48px;
 }
 
+.director-card {
+    width: 350px;
+    height: 281px;
+    display: flex;
+}
+
+
 .director-card img {
+    display: block;
     width: 96px;
     height: 96px;
+    margin: 0 auto 16px;
+    top: -12px;
     border-radius: 48px;
-    border: 2px solid var(--accent-cyan);
-    object-fit: cover;
-    margin-bottom: 1rem;
+    border: 2px solid #c4fffe;
 }
 
 .director-card h3 {
     color: var(--accent-cyan);
     font-size: 1.1rem;
-    margin-bottom: 0.35rem;
+    line-height: 28px;
+    margin-bottom: 0;
+    top: -10px;
+}
+
+.director-card--quote h3 {
+    top: -21.5px;
 }
 
 .director-card .role {
-    font-size: 0.92rem;
+    width: 302px;
+    height: 25px;
+    font-size: 15px;
+    line-height: 25px;
     font-style: italic;
+    font-weight: 500;
+    top: -10px;
 }
 
 .card-toggle {
     position: absolute;
     left: 50%;
-    bottom: -28px;
-    transform: translateX(-50%);
+    bottom: -13px;
+    transform: translateX(-50%) translateY(15px);
     width: 56px;
     height: 56px;
     border: 0;
@@ -180,18 +214,12 @@ body {
     font-weight: 700;
     cursor: pointer;
 }
-
-.director-card:last-child .card-toggle {
-    background: #79c8c7;
-    transform: translateX(-50%) rotate(45deg);
-    width: 56px;
-    height: 56px;
-    font-size: 2rem;
-    line-height: 1;
+.card-toggle img {
+    height: 16px;
+    width: 16px;
 }
-
-.director-card {
-    padding-bottom: 48px;
+.card-toggle:hover {
+    background-color: #79C8C7;
 }
 
 .director-card--quote article {
@@ -203,34 +231,20 @@ body {
 }
 
 .director-card--quote blockquote {
-    max-width: 320px;
+    width: 254px;
+    height: 75px;
     font-size: 0.9rem;
     line-height: 1.5rem;
-}
-
-.social-links {
-    display: flex;
-    align-items: center;
-    gap: 0.95rem;
-}
-
-.social-links a {
-    display: inline-flex;
-}
-
-.social-links img {
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    border: 0;
+    position: relative;
+    top: -20px;
 }
 
 /* Klientu dalis */
 .clients {
-    padding: 92px 0 98px;
+    height: 437px;
+    padding: 85px 0 129px;
     position: relative;
     overflow: hidden;
-    padding: 120px 0 120px;
     background-color: var(--deep-teal);
     background-image: url("assets/icons/bg-pattern-home-4-about-3.svg");
 }
@@ -247,33 +261,19 @@ body {
     background-size: 200px 200px;
     z-index: 0;
 }
-
-.clients > .container {
-    position: relative;
-    z-index: 1;
+.clients-title {
+    margin: 0;
+    padding: 0;
 }
-
 .clients-grid {
+    margin: 0;
+    padding: 0;
+    width: 1110px;
+    height: 45px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2.5rem;
-    column-gap: 5rem;
-    row-gap: 3rem;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-.clients-grid img {
-    display: block;
-    width: auto;
-    max-width: 162px;
-    max-height: 28px;
-    object-fit: contain;
-}
-
-.clients-grid li:last-child img {
-    max-width: 220px;
-    max-height: 40px;
+    gap: 80px;
+    position: relative;
+    top: -23px;
 }
