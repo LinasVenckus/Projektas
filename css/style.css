@@ -575,4 +575,35 @@ body {
     left: 9px;
     top: 467px;
   }
+
+  /* Section-delivering*/
+    .section-delivering {
+    height: 1410px;
+    width: 375px;
+    margin: 0;
+    padding: 140px 24px 164px;
+  }
+
+  .section-delivering-div {
+    height: 1106px;
+    width: 327px;
+  }
+
+  .section-delivering-div h2 {
+    height: 128px;
+    width: 327px;
+
+  }
+  .articles-delivering article {
+    height: 278px;
+    width: 327px;
+  }
+
+  .articles-delivering article blockquote {
+    height: 136px;
+    width: 327px;
+  }
+    .success-stories {
+    display: none;
+  }
 }
