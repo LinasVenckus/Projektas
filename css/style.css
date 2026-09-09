@@ -436,6 +436,45 @@ body {
     left: 206px;
     top: 600px;
   }
+}
+
+/* Section-build*/
+@media (max-width: 768px) {
+  .section-build {
+    background-color: #012f34;
+    width: 768px;
+    height: 710px;
+  }
+
+  .section-build-container {
+    width: 573px;
+    height: 510px;
+    margin: 100px 97.5px;
+    padding-top: 0px;
+  }
+
+  .section-build-parts {
+    flex-direction: column;
+    gap: 60px;
+    transform: translateY(-20px);
+  }
+
+  .section-build-parts h2 {
+    max-width: 445px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .articles-build {
+    width: 573px;
+    height: 94px;
+  }
+
+  #section-build-icon {
+    position: absolute;
+    left: 668px;
+    top: 0px;
+  }
 
   /* Section-delivering*/
   .section-delivering {
