@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
     --primary-teal: #014e56;
     --dark-teal: #004047;
@@ -26,7 +27,8 @@ body {
     margin: 0 auto;
     padding: 0;
 }
-                                                        /* header */
+
+/* header */
 .about-hero {
     height: 517px;
     padding: 0 0 120px;
@@ -61,6 +63,7 @@ body {
     height: 156px;
     width: 730px;
 }
+
 .hr-about {
     background-color: #F67E7E;
     border: none;
@@ -68,6 +71,7 @@ body {
     height: 4px;
     margin-bottom: 40px;
 }
+
 .about-hero p {
     max-width: 730px;
     max-height: 112px;
@@ -75,7 +79,8 @@ body {
     line-height: 28px;
     font-weight: 600;
 }
-                                                        /* Section directors */
+
+/* Section directors */
 
 /* Korteliu sekcija 3x2 tinklelis */
 .directors {
@@ -117,7 +122,7 @@ body {
     z-index: 0;
 }
 
-.directors > .container {
+.directors>.container {
     position: relative;
     z-index: 1;
 }
@@ -214,10 +219,12 @@ body {
     font-weight: 700;
     cursor: pointer;
 }
+
 .card-toggle img {
     height: 16px;
     width: 16px;
 }
+
 .card-toggle:hover {
     background-color: #79C8C7;
 }
@@ -261,10 +268,12 @@ body {
     background-size: 200px 200px;
     z-index: 0;
 }
+
 .clients-title {
     margin: 0;
     padding: 0;
 }
+
 .clients-grid {
     margin: 0;
     padding: 0;
@@ -277,111 +286,143 @@ body {
     position: relative;
     top: -23px;
 }
-                                                /*Tablet*/
+
+/*Tablet*/
 @media (max-width: 768px) {
-                                                /*Header*/
-.about-hero {
-    height: 556px;
-    width: 768px;
-    background-position: right -100px bottom -100px;
-}
-.hr-about {
-    display: none;
-}
-.about-hero__content {
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    height: 220px;
-    width: 683px;
-    margin-left: 45px;
-    margin-right: 40px;
-    margin-bottom: 112px;
-    margin-top: 32px;
-    gap: 24px;
+
+    /*Header*/
+    .about-hero {
+        height: 556px;
+        width: 768px;
+        background-position: right -100px bottom -100px;
+    }
+
+    .hr-about {
+        display: none;
+    }
+
+    .about-hero__content {
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        height: 220px;
+        width: 683px;
+        margin-left: 45px;
+        margin-right: 40px;
+        margin-bottom: 112px;
+        margin-top: 32px;
+        gap: 24px;
+    }
+
+    .about-hero h1 {
+        height: 56px;
+        width: 683px;
+        line-height: 56px;
+    }
+
+    .about-hero__content div {
+        align-items: center;
+    }
+
+    .about-hero p {
+        width: 457px;
+        height: 140px;
+        line-height: 28px;
+        font-size: 15px;
+        transform: translate(-3px, 3px);
+    }
+
+    /*Directors section*/
+    .directors {
+        width: 768px;
+        height: 1219px;
+        padding-top: 27px;
+    }
+
+    .directors>.container {
+        width: 573px;
+    }
+
+    .directors h2 {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 0px;
+    }
+
+    .directors-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 48px;
+        transform: translateY(-20px);
+    }
+
+    .director-card {
+        width: 281px;
+        height: 281px;
+    }
+
+    .director-card .role {
+        width: 233px;
+    }
+
+    /*Clients section*/
+    .clients {
+        height: 308px;
+        width: 768px;
+        padding: 100px 40px 100px 39px;
+    }
+
+    .clients::before {
+        top: -100px;
+    }
+
+    .clients h2 {
+        text-align: center;
+        width: 457px;
+        height: 32px;
+        margin: 0;
+        padding: 0;
+        line-height: 32px;
+        font-size: 32px;
+        position: unset;
+        margin: 0 auto 48px;
+    }
+
+    .clients-grid {
+        width: 689px;
+        height: 28px;
+        gap: 49px;
+        position: unset;
+    }
+
+    .clients-grid li:nth-child(1) img {
+        width: 103px;
+        height: 17px;
+    }
+
+    .clients-grid li:nth-child(2) img {
+        width: 114px;
+        height: 14px;
+    }
+
+    .clients-grid li:nth-child(3) img {
+        width: 112px;
+        height: 17px;
+    }
+
+    .clients-grid li:nth-child(4) img {
+        width: 103px;
+        height: 17px;
+    }
+
+    .clients-grid li:nth-child(5) img {
+        width: 61px;
+        height: 28px;
+    }
 }
 
-.about-hero h1 {
-    height: 56px;
-    width: 683px;
-    line-height: 56px;
-}
-
-.about-hero__content div {
-    align-items: center;
-}
-.about-hero p {
-    width: 457px;
-    height: 140px;
-    line-height: 28px;
-    font-size: 15px;
-    transform: translate(-3px, 3px);
-}
-                                                /*Clients section*/
-.clients {
-    height: 308px;
-    width: 768px;
-    padding: 100px 40px 100px 39px;
-}
-
-.clients::before {
-    top: -100px;
-}
-.clients h2 {
-    text-align: center;
-    width: 457px;
-    height: 32px;
-    margin: 0;
-    padding: 0;
-    line-height: 32px;
-    font-size: 32px;
-    position: unset;
-    margin: 0 auto 48px;
-}
-
-.clients-grid {
-    width: 689px;
-    height: 28px;
-    gap: 49px;
-    position: unset;
-}
-.clients-grid li:nth-child(1) img{
-    width: 103px;
-    height: 17px;
-}
-.clients-grid li:nth-child(2) img{
-    width: 114px;
-    height: 14px;
-}  
-.clients-grid li:nth-child(3) img{
-    width: 112px;
-    height: 17px;
-}  
-.clients-grid li:nth-child(4) img{
-    width: 103px;
-    height: 17px;
-}  
-.clients-grid li:nth-child(5) img{
-    width: 61px;
-    height: 28px;
-}           
-}
-                                                /*Mobile*/
+/*Mobile*/
 @media (max-width: 375px) {
-                                                /*Header*/
-.about-hero {
-    height: 520px;
-    width: 375px;
-}
-.about-hero__content {
-    height: 252px;
-    width: 327px;
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-bottom: 108px;
-    margin-top: 32px;
-    gap: 16px;
-}
 
 .about-hero h1 {
     height: 40px;
