@@ -289,6 +289,8 @@ body {
 
 /*Tablet*/
 @media (max-width: 768px) {
+
+    /*Header*/
     .about-hero {
         height: 556px;
         width: 768px;
@@ -312,8 +314,10 @@ body {
         gap: 24px;
     }
 
-    .hr-about {
-        display: none;
+    .about-hero h1 {
+        height: 56px;
+        width: 683px;
+        line-height: 56px;
     }
 
     .about-hero__content div {
@@ -328,7 +332,7 @@ body {
         transform: translate(-3px, 3px);
     }
 
-    /* Korteliu sekcija 2x3 tinklelis */
+    /*Directors section*/
     .directors {
         width: 768px;
         height: 1219px;
@@ -360,10 +364,67 @@ body {
     .director-card .role {
         width: 233px;
     }
+
+    /*Clients section*/
+    .clients {
+        height: 308px;
+        width: 768px;
+        padding: 100px 40px 100px 39px;
+    }
+
+    .clients::before {
+        top: -100px;
+    }
+
+    .clients h2 {
+        text-align: center;
+        width: 457px;
+        height: 32px;
+        margin: 0;
+        padding: 0;
+        line-height: 32px;
+        font-size: 32px;
+        position: unset;
+        margin: 0 auto 48px;
+    }
+
+    .clients-grid {
+        width: 689px;
+        height: 28px;
+        gap: 49px;
+        position: unset;
+    }
+
+    .clients-grid li:nth-child(1) img {
+        width: 103px;
+        height: 17px;
+    }
+
+    .clients-grid li:nth-child(2) img {
+        width: 114px;
+        height: 14px;
+    }
+
+    .clients-grid li:nth-child(3) img {
+        width: 112px;
+        height: 17px;
+    }
+
+    .clients-grid li:nth-child(4) img {
+        width: 103px;
+        height: 17px;
+    }
+
+    .clients-grid li:nth-child(5) img {
+        width: 61px;
+        height: 28px;
+    }
 }
 
 /*Mobile*/
 @media (max-width: 375px) {
+
+    /*Header*/
     .about-hero {
         height: 520px;
         width: 375px;
@@ -392,4 +453,5 @@ body {
         line-height: 28px;
         font-size: 15px;
     }
+
 }
