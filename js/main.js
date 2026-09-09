@@ -2,9 +2,11 @@ const buttons = document.querySelectorAll(".button-top, .button-bottom");
 const inputs = document.querySelectorAll("input, textarea");
 const errors = document.querySelectorAll(".error");
 const submit = document.querySelector("#submit");
+const overlay = document.querySelector("#overlay");
 const menu = document.querySelector("#menu");
 const open = document.querySelector(".open");
 const close = document.querySelector(".close");
+
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -51,7 +53,9 @@ if (submit) {
 
 open.addEventListener("click", () => {
   menu.classList.add("active");
+  overlay.classList.add("active");
 });
 close.addEventListener("click", () => {
   menu.classList.remove("active");
+  overlay.classList.remove("active");
 });

@@ -29,9 +29,11 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-
 .container {
   overflow: hidden;
+}
+.active {
+    transform: translateX(200);
 }
 
 img,
@@ -537,8 +539,39 @@ body {
     display: block;
   }
 }
-                                                            /*Mobile*/
+/* media queries mobile */
 @media (max-width: 375px) {
-html, body {
-  max-width: 375px;
+
+  /* header dalis */
+  .header {
+    height: 567px;
+  }
+  .header-find {
+    width: 327px;
+    height: 210px;
+    gap: 18px;
+  }
+
+  .header-find h1 {
+    width: 327px;
+    height: 80px;
+    font-size: 40px;
+    line-height: 40px;
+    transform: translateX(5px) translateY(-27px);
+  }
+
+  .header-find p {
+    width: 327px;
+    height: 112px;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    transform: translateX(65px) translateY(-27px);
+  }
+
+  #icon-right {
+    position: absolute;
+    left: 9px;
+    top: 467px;
+  }
 }
