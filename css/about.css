@@ -395,6 +395,43 @@ body {
     line-height: 28px;
     font-size: 15px;
 }
+                                                /*Directors section*/
+.directors {
+    max-width: 375px;
+    height: 2062px;
+    padding: 88px 24px;
+}
+
+.directors::before {
+    top: -100px;
+}
+.directors h2 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+    width: 327px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.directors-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 52px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}                       
+.director-card {
+    width: 327px;
+    height: 253px;
+}
+.director-card .role {
+    width: 279px;
+    height: 25px;
+}
                                                 /*Clients section*/
 .clients {
     height: 632px;
