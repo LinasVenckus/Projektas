@@ -314,6 +314,7 @@ body {
     height: 140px;
     line-height: 28px;
     font-size: 15px;
+    transform: translate(-3px, 3px);
 }
 }
                                                 /*Mobile*/
