@@ -485,3 +485,9 @@ body {
   display: block;
 }
 }
+                                                            /*Mobile*/
+@media (max-width: 375px) {
+html, body {
+  max-width: 375px;
+}
+}
