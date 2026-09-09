@@ -292,6 +292,7 @@ body {
     .about-hero {
         height: 556px;
         width: 768px;
+        background-position: right -100px bottom -100px;
     }
 
     .hr-about {
@@ -311,10 +312,8 @@ body {
         gap: 24px;
     }
 
-    .about-hero h1 {
-        height: 56px;
-        width: 683px;
-        line-height: 56px;
+    .hr-about {
+        display: none;
     }
 
     .about-hero__content div {
@@ -358,9 +357,40 @@ body {
         height: 281px;
     }
 
-
     .director-card article {
         width: 100%;
         height: 253px;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 375px) {
+    .about-hero {
+        height: 520px;
+        width: 375px;
+    }
+
+    .about-hero__content {
+        height: 252px;
+        width: 327px;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 108px;
+        margin-top: 32px;
+        gap: 16px;
+    }
+
+    .about-hero h1 {
+        height: 40px;
+        width: 327px;
+        line-height: 40px;
+        font-size: 40px;
+    }
+
+    .about-hero p {
+        width: 327px;
+        height: 196px;
+        line-height: 28px;
+        font-size: 15px;
     }
 }
