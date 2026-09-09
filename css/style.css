@@ -613,7 +613,11 @@ body {
     gap: 48px;
   }
 
-  article p {
+  .article img {
+    transform: translateY(3px);
+  }
+
+  .article p {
     transform: translateY(-10px);
   }
 
