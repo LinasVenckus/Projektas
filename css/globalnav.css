@@ -55,7 +55,11 @@ a:hover {
     color: #014e56;
     background-color: #ffffff;
 }
-
+.open {
+        display: none;
+        cursor: pointer;
+        transform: translate(8px, 7px);
+}
 /* media queries tablet */
 @media (max-width: 768px) {
     .nav-bar-header {
@@ -77,5 +81,30 @@ a:hover {
 
     .button-top {
         margin-left: auto;
+    }
+}
+/* media queries mobile */
+@media (max-width: 375px) {
+    .open {
+        display: block;
+    }
+
+    .nav-bar-header {
+        justify-content: space-between;
+        height: 128px;
+        width: 327px;
+        margin: 0px 24px;
+    }
+
+    .logo img {
+        transform: translate(-7px, 8px);
+    }
+
+    .nav-bar-header .navigation-list {
+        display: none;
+    }
+
+    .button-top {
+        display: none;
     }
 }
