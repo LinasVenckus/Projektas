@@ -542,6 +542,9 @@ body {
 @media (max-width: 375px) {
 
   /* header dalis */
+  .header {
+    height: 567px;
+  }
   .header-find {
     width: 327px;
     height: 210px;
@@ -553,7 +556,7 @@ body {
     height: 80px;
     font-size: 40px;
     line-height: 40px;
-    transform: translateY(-27px);
+    transform: translateX(0px) translateY(-27px);
   }
 
   .header-find p {
