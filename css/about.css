@@ -434,21 +434,26 @@ body {
 .clients-grid li:nth-child(1) img{
     width: 146.56px;
     height: 24.19px;
+    transform: translateY(9px);
 }
 .clients-grid li:nth-child(2) img{
     width: 162.21px;
     height: 19.92px;
+    transform: translateY(5px);
 }  
 .clients-grid li:nth-child(3) img{
     width: 159.37px;
     height: 24.19px;
+    transform: translateY(2px);
 }  
 .clients-grid li:nth-child(4) img{
     width: 146.56px;
     height: 24.19px;
+    transform: translateY(-3px);
 }  
 .clients-grid li:nth-child(5) img{
     width: 86.8px;
     height: 39.84px;
+    transform: translateY(-7px);
 }                          
 }
