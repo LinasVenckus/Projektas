@@ -387,12 +387,15 @@ body {
   width: 66px;
   height: 66px;
 }
-  .success-stories {
+
+.success-stories {
   display: none;
 }
-                                                            /*Tablet*/
+
+/*Tablet*/
 @media (max-width: 768px) {
-                                                         /* header dalis */
+
+  /* header dalis */
   .header-find {
     width: 683px;
     height: 240px;
@@ -435,7 +438,7 @@ body {
   }
 }
 
-                                                 /* Section-build*/
+/* Section-build*/
 @media (max-width: 768px) {
   .section-build {
     background-color: #012f34;
@@ -453,6 +456,7 @@ body {
   .section-build-parts {
     flex-direction: column;
     gap: 60px;
+    transform: translateY(-20px);
   }
 
   .section-build-parts h2 {
@@ -461,60 +465,75 @@ body {
     line-height: 32px;
   }
 
+  .articles-build {
+    width: 573px;
+    height: 94px;
+  }
+
   #section-build-icon {
     position: absolute;
     left: 668px;
     top: 0px;
   }
 
-                                                    /* Section-delivering*/
-.section-delivering {
+  /* Section-delivering*/
+  .section-delivering {
     height: 1199px;
     width: 768px;
     margin: 0;
     padding: 100px 98px 100px 97px;
-}
-.section-delivering-div {
-  all: unset;
-  height: 999px;
-  width: 573px;
-  margin: 0;
-  padding: 0;
-}
-.section-delivering-div h2 {
-  height: 96px;
-  width: 573px;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 32px;
-  font-family: "Livvic", sans-serif;
-  
-}
-.articles-delivering {
-  flex-direction: column;
-  gap: 48px;
+  }
 
-}
-.articles-delivering {
+  .section-delivering-div {
+    all: unset;
+    height: 999px;
+    width: 573px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-delivering-div h2 {
+    height: 96px;
+    width: 573px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    font-family: "Livvic", sans-serif;
+
+  }
+
+  .articles-delivering {
+    flex-direction: column;
+    gap: 48px;
+
+  }
+
+  .articles-delivering {
     transform: translateY(-7px);
-}
-.articles-delivering article{
-  height: 253px;
-  width: 573px;
-}
-.articles-delivering article blockquote {
-  height: 75px;
-  width: 573px;
-  margin-bottom: 16px;
-  text-align: center;
-}
-.people {
-  margin-top: 16px;
-}
-.name, .founders {
-  margin: 0;
-}
-.success-stories {
-  display: block;
-}
+  }
+
+  .articles-delivering article {
+    height: 253px;
+    width: 573px;
+  }
+
+  .articles-delivering article blockquote {
+    height: 75px;
+    width: 573px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .people {
+    margin-top: 16px;
+  }
+
+  .name,
+  .founders {
+    margin: 0;
+  }
+
+  .success-stories {
+    display: block;
+  }
 }
