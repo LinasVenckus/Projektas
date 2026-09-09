@@ -29,9 +29,11 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-
 .container {
   overflow: hidden;
+}
+.active {
+    transform: translateX(200);
 }
 
 img,

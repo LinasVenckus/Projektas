@@ -2,9 +2,11 @@ const buttons = document.querySelectorAll(".button-top, .button-bottom");
 const inputs = document.querySelectorAll("input, textarea");
 const errors = document.querySelectorAll(".error");
 const submit = document.querySelector("#submit");
-const menu = document.getElementById("menu");
-const open = document.getElementById("open");
-const close = document.getElementById("close");
+const overlay = document.querySelector("#overlay");
+const menu = document.querySelector("#menu");
+const open = document.querySelector(".open");
+const close = document.querySelector(".close");
+
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -34,15 +36,26 @@ inputs.forEach((input) => {
   });
 
 });
+if (submit) {
+  submit.addEventListener("click", () => {
+    inputs.forEach(input => {
+      input.value = "";
+      input.classList.remove("error-active");
 
-submit.addEventListener("click", () => {
-  inputs.forEach(input => {
-    input.value = "";
-    input.classList.remove("error-active");
+    });
 
+    errors.forEach((error) => {
+      error.style.display = "none";
+    });
   });
+}
 
-  errors.forEach((error) => {
-    error.style.display = "none";
-  });
+
+open.addEventListener("click", () => {
+  menu.classList.add("active");
+  overlay.classList.add("active");
+});
+close.addEventListener("click", () => {
+  menu.classList.remove("active");
+  overlay.classList.remove("active");
 });
