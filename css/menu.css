@@ -1,0 +1,36 @@
+ .menu {
+    width: 255px;
+    height: 667px;
+    background-color: #2C6269;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+.menu.active {
+    transform: translateX(0);
+}
+.close {
+    position: fixed;
+    right: 0;
+    margin-top: 56.37px;
+    margin-right: 25.87px;
+}
+.menu .navigation-list {
+    margin-top: 112px;
+    flex-direction: column;
+    gap: 20px;
+    height: 80px;
+}
+.menu .button-top {
+    margin-top: 36px;
+    margin-right: 48px;
+    margin-left: 48px;
+}
+#icon-nav {
+    position: absolute;
+    right: -100px;
+    bottom: 0px;
+}
