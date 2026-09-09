@@ -553,7 +553,7 @@ body {
     height: 80px;
     font-size: 40px;
     line-height: 40px;
-    transform: translateX(5px) translateY(-27px);
+    transform: translateY(-27px);
   }
 
   .header-find p {
@@ -562,7 +562,7 @@ body {
     font-size: 15px;
     line-height: 28px;
     text-align: center;
-    transform: translateX(65px) translateY(-27px);
+    transform: translateX(60px) translateY(-27px);
   }
 
   #icon-right {
