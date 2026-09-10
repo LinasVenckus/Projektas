@@ -113,7 +113,6 @@ address {
 .nav-bar-footer .navigation-list {
     gap: 24px;
 }
-
                                                             /*Mobile*/
 @media (max-width: 375px) {
 footer {

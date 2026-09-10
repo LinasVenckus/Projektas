@@ -364,7 +364,10 @@ body {
 
 /*Tablet*/
 @media (max-width: 768px) {
-
+.social-list {
+    transform: translateY(4px);
+}
+}
     /*Header*/
     .about-hero {
         height: 556px;
@@ -503,7 +506,9 @@ body {
 
 /*Mobile*/
 @media (max-width: 375px) {
-
+.social-list {
+    transform: translateY(0px);
+}
                                                /*Header*/
 .about-hero {
     height: 520px;
