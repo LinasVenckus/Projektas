@@ -508,6 +508,7 @@ body {
 .about-hero {
     height: 520px;
     width: 375px;
+    background-position: right -100px bottom -100px;
 }
 .about-hero__content {
     height: 252px;
