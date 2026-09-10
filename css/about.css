@@ -535,6 +535,7 @@ body {
     height: 196px;
     line-height: 28px;
     font-size: 15px;
+    transform: translate(3px, -2px);
 }
                                                 /*Directors section*/
 .directors {
