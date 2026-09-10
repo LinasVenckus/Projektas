@@ -369,7 +369,7 @@ body {
     .about-hero {
         height: 556px;
         width: 768px;
-        background-position: right -100px bottom -100px;
+        background-position: right -100px bottom 0px;
     }
 
     .hr-about {
