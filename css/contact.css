@@ -255,9 +255,14 @@ h2 {
     transform: translate(-2px, -2px);
 }
 }
+.social-list {
+    transform: translateY(4px);
+}
                                                             /*Mobile*/
 @media (max-width: 375px) {
-
+.social-list {
+    transform: translateY(0px);
+}
 header {
     height: 128px;
     width: 375px;
