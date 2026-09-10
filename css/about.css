@@ -152,7 +152,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
-    row-gap: 66px;
+    row-gap: 76px;
 }
 
 .director-card article {
