@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+html, body {
+    overflow-x: hidden;
+}
 :root {
     --primary-teal: #014e56;
     --dark-teal: #004047;
@@ -21,7 +23,6 @@ body {
     background: #ffffff;
     color: var(--text-light);
 }
-
 .container {
     max-width: 1110px;
     margin: 0 auto;
@@ -151,23 +152,27 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
-    row-gap: 48px;
+    row-gap: 76px;
 }
 
 .director-card article {
-    width: 350px;
-    max-width: 100%;
-    height: 253px;
-    background: var(--deep-teal);
+    width: 100%;
+    height: 100%;
     text-align: center;
-    padding: 2rem 1.5rem 3.2rem;
-    position: relative;
+    padding: 35px 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
 }
 
 .director-card {
-    width: 350px;
-    height: 281px;
-    display: flex;
+    width: 100%;
+    max-width: 350px;
+    height: 253px;
+    position: relative;
+    background: var(--deep-teal);
+    transition: background-color 0.3s ease;
 }
 
 
@@ -188,11 +193,70 @@ body {
     margin-bottom: 0;
     top: -10px;
 }
-
-.director-card--quote h3 {
-    top: -21.5px;
+.director-card-inactive,
+.director-card-active {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 35px 24px;
+    box-sizing: border-box;
 }
-
+.director-card-inactive {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+.director-card-inactive {
+    transform: translateY(-12px);
+}
+.director-card-active {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transform: translateY(10px);
+    top: 0;
+    left: 0;
+}
+.active-h3 {
+    width: 302px;
+    height: 28px;
+    margin-bottom: 8px;
+    transform: translateY(-31px);
+}
+.active-p {
+    width: 254px;
+    height: 75px;
+    font-size: 15px;
+    font-family: "Livvic", sans-serif;
+    font-weight: 600;
+    line-height: 25px;
+    transform: translateY(-21px);
+}
+.active-ul {
+    display: flex;
+    width: 60px;
+    height: 20px;
+    gap: 16px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(4px) translateX(1px);
+}
+.active-ul img {
+    all: unset;
+    height: 20px;
+    width: 20px;
+}
+.active-ul img:hover {
+    filter: brightness(0) saturate(100%) invert(68%) sepia(85%) saturate(1955%) hue-rotate(313deg) brightness(111%) contrast(93%);
+}
 .director-card .role {
     width: 302px;
     height: 25px;
@@ -202,22 +266,37 @@ body {
     font-weight: 500;
     top: -10px;
 }
+.director-card.is-active {
+    background: var(--card-teal);
+}
+.director-card.is-active .director-card-inactive {
+    opacity: 0;
+    pointer-events: auto;
+    transform: translateY(-10px);
+}
 
+.director-card.is-active .director-card-active {
+    opacity: 1;
+    pointer-events: auto;   
+    transform: translateY(0);
+}
 .card-toggle {
     position: absolute;
+    bottom: -28px;
     left: 50%;
-    bottom: -13px;
-    transform: translateX(-50%) translateY(15px);
+    transform: translateX(-50%);
     width: 56px;
     height: 56px;
     border: 0;
     border-radius: 50%;
     background: var(--accent-coral);
     color: var(--deep-teal);
-    font-size: 2rem;
-    line-height: 1;
-    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    z-index: 20;
+    transition: background-color 0.2s ease, transform 0.3s ease;
 }
 
 .card-toggle img {
@@ -228,24 +307,20 @@ body {
 .card-toggle:hover {
     background-color: #79C8C7;
 }
-
-.director-card--quote article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.75rem;
+.director-card.is-active .card-toggle:hover {
+    background-color: #F67E7E;
 }
-
-.director-card--quote blockquote {
-    width: 254px;
-    height: 75px;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    position: relative;
-    top: -20px;
+.director-card.is-active .card-toggle {
+    background-color: var(--accent-cyan);
+    transform: translateX(-50%) rotate(45deg);
 }
-
+.director-card button img {
+    all: unset;
+    transition: transform 0.3s ease;
+}
+.director-card.is-active .director-card button img {
+    transform: rotate(45deg);
+}
 /* Klientu dalis */
 .clients {
     height: 437px;
@@ -289,12 +364,14 @@ body {
 
 /*Tablet*/
 @media (max-width: 768px) {
-
+.social-list {
+    transform: translateY(4px);
+}
     /*Header*/
     .about-hero {
         height: 556px;
         width: 768px;
-        background-position: right -100px bottom -100px;
+        background-position: right -100px bottom 0px;
     }
 
     .hr-about {
@@ -352,19 +429,24 @@ body {
     .directors-grid {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 10px;
-        row-gap: 48px;
+        row-gap: 76px;
         transform: translateY(-20px);
     }
 
     .director-card {
         width: 281px;
-        height: 281px;
+        height: 254px;
     }
-
+    .active-p {
+        transform: translateX(-1px) translateY(-24px);
+    }
     .director-card .role {
         width: 233px;
     }
-
+    .active-p {
+        width: 233px;
+        height: 75px;
+    }
     /*Clients section*/
     .clients {
         height: 308px;
@@ -423,11 +505,14 @@ body {
 
 /*Mobile*/
 @media (max-width: 375px) {
-
+.social-list {
+    transform: translateY(0px);
+}
                                                /*Header*/
 .about-hero {
     height: 520px;
     width: 375px;
+    background-position: right -100px bottom -100px;
 }
 .about-hero__content {
     height: 252px;
@@ -450,14 +535,14 @@ body {
     height: 196px;
     line-height: 28px;
     font-size: 15px;
+    transform: translate(0px, 0px);
 }
                                                 /*Directors section*/
 .directors {
-    max-width: 375px;
+    max-width: 100%;
     height: 2062px;
     padding: 88px 24px;
 }
-
 .directors::before {
     top: -100px;
 }
@@ -471,12 +556,14 @@ body {
     padding: 0;
     margin-bottom: 69px;
 }
-
+.directors .container {
+    width: 327px;
+}
 .directors-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 52px;
-    width: 100%;
+    width: 327px;
     margin: 0;
     padding: 0;
 }                       
@@ -487,6 +574,10 @@ body {
 .director-card .role {
     width: 279px;
     height: 25px;
+}
+.active-p {
+    width: 234.66px;
+    height: 75px;
 }
                                                 /*Clients section*/
 .clients {
