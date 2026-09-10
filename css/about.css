@@ -228,7 +228,7 @@ body {
     width: 302px;
     height: 28px;
     margin-bottom: 8px;
-    transform: translateY(-20px);
+    transform: translateY(-31px);
 }
 .active-p {
     width: 254px;
@@ -237,7 +237,7 @@ body {
     font-family: "Livvic", sans-serif;
     font-weight: 600;
     line-height: 25px;
-    transform: translateY(-10px);
+    transform: translateY(-21px);
 }
 .active-ul {
     display: flex;
@@ -247,7 +247,7 @@ body {
     list-style: none;
     justify-content: center;
     align-items: center;
-    transform: translateY(10px);
+    transform: translateY(4px) translateX(-1px);
 }
 .active-ul img {
     all: unset;
