@@ -435,7 +435,9 @@ body {
         width: 281px;
         height: 254px;
     }
-
+    .active-p {
+        transform: translateX(-1px) translateY(-24px);
+    }
     .director-card .role {
         width: 233px;
     }
