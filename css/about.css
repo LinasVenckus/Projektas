@@ -247,7 +247,7 @@ body {
     list-style: none;
     justify-content: center;
     align-items: center;
-    transform: translateY(4px) translateX(-1px);
+    transform: translateY(4px) translateX(1px);
 }
 .active-ul img {
     all: unset;
