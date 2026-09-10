@@ -173,7 +173,9 @@ textarea::placeholder {
     font-weight: 600;
     font-family: 'Livvic', sans-serif;
 }
-
+.social-list {
+    transform: translateY(30px);
+}
                                                             /*Tablet*/
 @media (max-width: 768px) {
 header {
