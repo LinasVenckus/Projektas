@@ -427,7 +427,7 @@ body {
     .directors-grid {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 10px;
-        row-gap: 48px;
+        row-gap: 76px;
         transform: translateY(-20px);
     }
 
