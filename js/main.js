@@ -6,7 +6,8 @@ const overlay = document.querySelector("#overlay");
 const menu = document.querySelector("#menu");
 const open = document.querySelector(".open");
 const close = document.querySelector(".close");
-
+const cards = document.querySelectorAll(".card-toggle")
+const cardToggles = document.querySelectorAll(".card-toggle");
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -50,7 +51,6 @@ if (submit) {
   });
 }
 
-
 open.addEventListener("click", () => {
   menu.classList.add("active");
   overlay.classList.add("active");
@@ -58,4 +58,13 @@ open.addEventListener("click", () => {
 close.addEventListener("click", () => {
   menu.classList.remove("active");
   overlay.classList.remove("active");
+});
+
+cardToggles.forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    const directorCard = toggle.closest(".director-card");
+    if (directorCard) {
+      directorCard.classList.toggle("is-active");
+    }
+  });
 });
