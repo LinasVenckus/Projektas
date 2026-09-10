@@ -53,6 +53,7 @@ footer p {
     align-items: center;
     list-style: none;
     gap: 16px;
+    transform: translateY(-2px);
 }
 .social-list img:hover{
     filter: brightness(0) saturate(100%) invert(68%) sepia(85%) saturate(1955%) hue-rotate(313deg) brightness(111%) contrast(93%);
@@ -113,10 +114,7 @@ address {
 .nav-bar-footer .navigation-list {
     gap: 24px;
 }
-.social-list {
-    transform: translateY(3px);
-}
-}
+
                                                             /*Mobile*/
 @media (max-width: 375px) {
 footer {
