@@ -71,6 +71,7 @@ h2 {
 
 #icon-person {
     margin-left: 7px;
+    transform: translate(-6px, 3px);
 }
 
 .about-us p {
