@@ -214,6 +214,13 @@ main {
     padding-left: 2px;
     height: auto;
 }
+#icon-person {
+    margin-left: 7px;
+    transform: translate(0px, 0px);
+}
+.icons-contact {
+    transform: translateY(0px);
+}
 h1 {
     width: 248px;
     height: 56px;
@@ -307,6 +314,10 @@ h2 {
 }
 .about-us div:nth-child(3) {
     transform: translateY(24px);
+}
+#icon-person {
+    margin-left: 8px;
+    margin-bottom: 1px;
 }
 .about-us {
     width: 327px;
