@@ -72,7 +72,9 @@ h2 {
 #icon-person {
     transform: translate(1px, -3px);
 }
-
+.icons-contact {
+    transform: translateY(-3px);
+}
 .about-us p {
     display: flex;
     align-items: center;
